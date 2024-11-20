@@ -35,13 +35,10 @@ The raw data includes columns like **customer IDs, transaction dates, and purcha
    - **Frequency**: Total number of purchases.
    - **Monetary**: Total spending by the customer.
 
-2. **Handle Skewness**:
-   - To address the skewness in **Frequency** and **Monetary** data, a logarithmic transformation (`log1p`) was applied.
-
-3. **Remove Outliers**:
+2. **Remove Outliers**:
    - Outliers were capped to improve model performance and ensure clusters are well-separated.
 
-4. **Standardize Features**:
+3. **Standardize Features**:
    - RFM metrics were scaled using **StandardScaler** to normalize values and ensure equal weighting in clustering.
 
 ---
